@@ -1,0 +1,54 @@
+{
+"title": "GitBook 使用教程",
+"description": "记录 GitBook 的配置和一些插件的使用",
+"author": "Monsterloo",
+"output.name": "site",
+"language": "zh-hans",
+"gitbook": "3.2.2",
+"root": ".",
+ "plugins": [
+     "betterchinese",
+     "-duoshuo",
+     "highlight",
+     "lunr",
+     "baidu_gio",
+     "search",
+     "fontsettings",
+     "theme-default",
+     "toolbar",
+     "sharing"
+ ],
+ "pluginsConfig": {
+     "lunr": {
+         "maxIndexSize": 1000000,
+         "ignoreSpecialCharacters": false
+     },
+     "baidu_gio": {
+         "token": "Your Token"
+     },
+     "toolbar": {
+         "buttons":
+         [
+             {
+                 "label": "GitHub",
+                 "icon": "fa fa-github",
+                 "url": "https://github.com/wechats/tinyapp-doc"
+             },
+             {
+                 "label": "PDF",
+                 "icon": "fa fa-file-pdf-o",
+                 "url": "https://wechats.github.io/tinyapp-doc/gen/tinyapp-doc.pdf"
+             }
+         ]
+     },
+     "sharing": {
+         "facebook": false,
+         "twitter": false,
+         "google": false,
+         "weibo": true,
+         "instapaper": false,
+         "vk": false,
+         "all": ["weibo"]
+     }
+ }
+}
